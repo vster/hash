@@ -51,7 +51,7 @@ int main()
 		for (long j = 0; j < 6; j++)
 		{
  			len = (int)strlen((char*)TextToHashArray[j]);
-			hash((byte*)TextToHashArray[j], len, hashed);
+            hash_g94((byte*)TextToHashArray[j], len, hashed);
 			count++;
 
 		}
@@ -71,7 +71,7 @@ int main()
 	buf[i] = 0x00;
  	len = strlen((char*)buf);
 
-	hash(buf, len, hashed);
+    hash_g94(buf, len, hashed);
 
 	cout << "TEST 8" << endl;
 	cout << "Text to hash = 128 x \"U\" " << endl;
@@ -88,7 +88,7 @@ int main()
 	buf[i] = '\0';
  	len = strlen((char*)buf);
 
-	hash(buf, len, hashed);
+    hash_g94(buf, len, hashed);
 
 	cout << "TEST 9" << endl;
 	cout << "Text to hash = 1000000 x \"a\" " << endl;
