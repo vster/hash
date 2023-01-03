@@ -190,7 +190,7 @@ void f(byte H[], byte M[], byte newH[])
 	memcpy(newH, S, sizeof S);
 }
 
-void hash(byte buf[], int len, byte result[]) 
+void hash_g94(byte buf[], int len, byte result[])
 {
 	Block block, Sum, L, H, newH;
 	int pos = 0, posIB = 0;
